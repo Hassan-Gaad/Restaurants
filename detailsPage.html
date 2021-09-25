@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="css.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+  <div class="navbar">
+    <div class="navbar_container">
+      <div class="topnav">
+        <a href="./index.html">Home</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#phoneNo">Contact</a>
+        <a href="#about">About</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="header">
+    <div class="header-text">
+      <h1>Welcome to</h1>
+      <h1 id="restaurantName" class="restaurantName">this is restaurant name</h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <div id="about" class="side">
+      <h2 class="text-center" style="color:cadetblue;">About Us</h2>
+      <div id="MainImg">
+      </div>
+      <p></p>
+      <h3 class="text-center-medium" style="color:cadetblue">Website 
+       
+          <a href="" id="mapURL">
+            <img src="./img/world-wide-web.png" alt="website" style="max-width: 30px;">
+          </a> 
+      </h3>
+        <ul>
+          <li>
+            <div>
+              <h4>Name</h4>
+              <p id="aboutRestName">Restaurant name</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h4>phone</h4>
+              <p id="phoneNo">+185997726</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h4>Review</h4>
+              <p id="review">430</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h4>Price</h4>
+              <p id="price">$$</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h4>Closed</h4>
+              <p><span id="closedFrom">From 3:00</span> - <span id="closedTo">To 10:00</span> </p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h4>rating</h4>
+              <p id="ratingNo">4.3</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h4>location</h4>
+              <p id="location">3373 Tates Creek Rd Lexington, KY 40502</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h4>categories</h4>
+              <p id="category">Cocktail Bars | American (New) | Seafood</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h4 id="claimed">claimed</h4>
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+      <!-- MAIN (Center website) -->
+      <div class="main">
+
+        <h2 class="text-center">~ Restaurant ~</h2>
+        <hr>
+
+        <p class="quote">"Thanks for stopping by. We are the last authentic restaurant in <span id="city">Milan</span>, serving delicious
+         <span id="country"> Italian </span> cuisine cooked by the best chefs. It only takes a few minutes to browse through our website and check
+          out our menu. We hope you'll soon join us for a superb culinary experience. :) "</p>
+        <!--  Gallery Grid -->
+        <div id="gallery" class="slideshow-container">
+          <!-- grid added by javascript code when url came  -->
+        </div>
+        <br>
+
+        <div style="text-align:center">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+
+        <!--- Start of Reservation-->
+          <h2 class="text-center">~ Reservation ~</h2>
+        
+        <div class="reservation-container">
+          <img class="reservation-img" src="./img/reserve.jpg" alt="reserve" style="width:100%;">
+
+          <!-- <div class="reservation-text top-left">Dinner 19:30 - 23:30</div>
+          <div class="reservation-text top-right">Lunch 12:00 - 15:00</div>
+          <div class="reservation-text centered">TimeTable</div> -->
+
+          <div class="reserve-text-container">
+            <h1 class="reservation-text text-center-cadeblue">Timetables</h1>
+            <div class="reserve-row">
+              <div class="reserve-lunch">
+                <h2 class="text-center">Lunch</h2>
+                <h5 id="lunchTime" class="text-center-orange">12:00 - 15:00</h5>
+              </div>
+              <div class="reserve-Dinner">
+                <h2 class="text-center">Dinner</h2>
+                <h5 id="dinnerTime" class="text-center-orange">19:30 - 23:30</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <!-- END MAIN -->
+
+        <br>
+        <div class="row bg-light">
+          <div class="col">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-6">
+                  <h3>Reserve</h3>
+                  <label for="inputDate"> Date</label>
+                  <input type="date" class="form-control" id="inputDate" placeholder="Data gg/mm/aaaa">
+                </div>
+                <div class="form-group col-6">
+                  <h3>Details</h3>
+                  <label for="inputName"> Name</label>
+                  <input type="text" class="form-control" id="inputName" placeholder="Name">
+                </div>
+                <div class="form-group col-6">
+                  <label for="inputTime"> Timetables</label>
+                  <input type="time" class="form-control" id="inputTime" placeholder="Timetables">
+                </div>
+                <div class="form-group col-6">
+                  <label for="inputEmail"> Email</label>
+                  <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                </div>
+                <div class="form-group col-6">
+                  <label for="inputNumber"> Number of Guests</label>
+                  <input type="number" class="form-control" id="inputNumber" placeholder="Number of Guests">
+                </div>
+                <div class="form-group col-6">
+                  <label for="inputCel"> Phone</label>
+                  <input type="tel" class="form-control" id="inputCel" placeholder="Phone">
+                </div>
+                <div class="form-group col-12">
+                  <label for="inputComment"> Further requests</label>
+                  <textarea class="form-control" rows="4" id="inputComment" placeholder="Further requests"></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <div class="submitBtn col-">
+                  <button type="submit" class="btn btn-secondary btn-block">Reserve</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="map">
+          <h2 class="text-center">~ Our Location ~</h2>
+          <div class="map-address-uel">
+            <h3 class="text-left">Address:</h3>
+            <p class="location text-left-small">Viale Enrico Fermi, 20159 Milan, Mailand (Lombardia) </p>
+          
+          </div>
+          <!--The div element for the map -->
+          <div id="map"></div>
+
+          <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+          <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdivo89cVyvrpPZ-4Cf5eGcRfj0o6nRUM&callback=initMap&libraries=&v=weekly"
+            async></script>
+
+        </div>
+      </div>
+
+      <script src="./detailsPage.js"></script>
+    </div>
+  </div>
+
+</body>
+
+</html>

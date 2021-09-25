@@ -1,0 +1,545 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body,
+html {
+  font-family: 'Merienda', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+
+@font-face {
+  font-family: "MikkelSans-Light";
+  src: url("../font/MikkelSans-Light.ttf");
+
+  /* font-family: "MikkelSans-Thin";
+  src: url("../font/MikkelSans-Regular.ttf"); */
+}
+
+
+.quote {
+  font-size: 1.8em;
+  font-family: "MikkelSans-Light";
+  /* background-color: rgb(252, 244, 244); */
+  max-width: 100%;
+  height: 220px;
+
+}
+
+
+/* Style the top navigation bar */
+.navbar {
+  background-color: #333;
+  min-height: 80px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Needed to position the navbar */
+  position: relative;
+}
+
+/* Position the navbar container inside the image */
+.navbar_container {
+  position: absolute;
+  margin: 20px;
+  width: auto;
+}
+
+/* The navbar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Header*/
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/2.jpg");
+
+  /* Set a specific height */
+  height: 100%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+}
+
+.text-center {
+  text-align: center !important;
+  font-family: "MikkelSans-Light";
+  font-size: 2.3rem;
+}
+.text-center-orange {
+  text-align: center !important;
+  font-family: "MikkelSans-Light";
+  font-size: 2.3rem;
+  color: tomato;
+}
+
+.text-center-medium {
+  text-align: center !important;
+  font-family: "MikkelSans-Light";
+  font-size: 1.7rem;
+}
+
+.text-left {
+  text-align: left !important;
+  font-family: "MikkelSans-Light";
+  font-size: 2.3rem;
+}
+
+.text-left-small {
+  text-align: left !important;
+  font-family: "MikkelSans-Light";
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.header-text {
+  text-align: center;
+  font-size: 2em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.header-text button {
+  border: none;
+  outline: 0;
+  font-size: large;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.header-text button:hover {
+  background-color: #555;
+  color: white;
+}
+
+/* Column container */
+.row {
+  display: -ms-flexbox;
+  /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap;
+  /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%;
+  /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+#restaurantName {
+
+  font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 900;
+  word-wrap: break-word !important;
+  word-break: break-word !important;
+  overflow-wrap: break-word !important;
+  color: rgb(255, 255, 255);
+  font-size: 48px;
+  line-height: 54px;
+  display: inline;
+}
+
+#MainImg {
+  background-image: url("../img/2.jpg");
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.row_side_details {
+  padding-left: 1em;
+}
+
+/* Main column */
+.main {
+  -ms-flex: 70%;
+  /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.gallery_grid_row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.gallery_grid_row,
+.gallery_grid_row>.column {
+  padding: 8px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/* END of Grid Gallery row */
+
+/* Footer */
+
+.leave_msg {
+  font-size: 25px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: rgb(63, 62, 62);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #333;
+}
+
+/* Style the container/contact section */
+.footer-container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+
+/* ************************* */
+.mySlides {
+  display: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+.slideImage {
+  display: block;
+  margin: auto;
+  width: 100%;
+  height: 400px;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {
+    font-size: 11px
+  }
+}
+
+/* reservation */
+.reservation-container {
+  position: relative;
+  text-align: center;
+  color: black;
+  display: block;
+}
+
+
+.centered {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.top-left {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+}
+
+.top-right {
+  position: absolute;
+  top: 40%;
+  right: 5%;
+}
+
+.reservation-text {
+  text-align: center !important;
+  font-size: 2rem;
+  line-height: 1.2;
+  display: block;
+  font-weight: bold;
+}
+
+.reservation-img {
+  opacity: .50;
+}
+
+/* ######################################reservation text styling ###########*/
+.reserve-text-container {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  /* min-height: 1px; */
+  /* padding-right: 15px;
+    padding-left: 15px; */
+}
+
+
+.reserve-row {
+  display: -webkit-box;
+
+}
+
+.reserve-lunch,
+.reserve-Dinner {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+
+}
+
+/* $$$$$$$$$$$$$$$$$ reservation Form$$$$$$$$$$$$$$$$$$$ */
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+.col {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.form-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+}
+
+.form-row>.col,
+.form-row>[class*=col-] {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+/* col-6 */
+.col-6,
+.col-md-3 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+
+
+.form-control {
+  display: block;
+  width: 100%;
+  color: #495057;
+  padding: .375rem .75rem;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  /* make the form control boxes rounded */
+  border-radius: .25rem;
+}
+
+button,
+input {
+  overflow: visible;
+  font-family: monospace;
+
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* Set the size of the div element that contains the map */
+#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
+
+/* about section styling */
+li h4 {
+  text-align: left !important;
+  font-family: "MikkelSans-Light";
+  font-size: 1.7rem;
+  color: tomato;
+}
+
+div > p {
+  text-align: left !important;
+  font-family: "MikkelSans-Light";
+  font-size: 2.3rem;
+  color: cadetblue;
+  font-weight: lighter;
+}
+.text-center-cadeblue {
+  text-align: center !important;
+  font-family: "MikkelSans-Light";
+  font-size: 2.3rem;
+  color: cadetblue;
+}

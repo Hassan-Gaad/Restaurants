@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="Body_Container">
+        <div class="banner">
+            <div class="navbar">
+                <h1 class="logo">Restaurant</h1>
+                <ul>
+                    <li><a href="#">Viset</a></li>
+                    <li><a href="#">Nearby</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">contact</a></li>
+                    <li><a href="#">Shop</a></li>
+                </ul>
+            </div>
+            <hr style="width:99.8%;top:15%;background-color:rgb(104, 104, 104);border: none;height: 1px ;">
+
+            <div class="search-container" style="display: flex;">
+
+                <input id="textinp" type="text" placeholder="Search.. Categories" name="search">
+                <button id="bt1" onmouseover="change()" onmouseout="back()" onclick="searchCateg()">SEARCH</button>
+
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">Categories
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <div class="f1">
+                        <button value="American (New)" onclick="drobSearch(this.value)"> American (New)</button>
+                        <button value="Indian" onclick="drobSearch(this.value)"> Indian</button>
+                        <button value="Vietnamese" onclick="drobSearch(this.value)">Vietnamese</button>
+                    </div>
+                    <div class="f2">
+                        <button value="Japanese" onclick="drobSearch(this.value)">Japanese</button>
+                        <button value="Italian" onclick="drobSearch(this.value)">Italian</button>
+                        <button value="Seafood" onclick="drobSearch(this.value)">Seafood</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div style="background-color:rgb(24, 24, 24);font-size:36px">
+            <div class="containerimg">
+                <div id="imgContaineer1">
+
+                </div>
+
+
+                <button id="button2" style="vertical-align:middle"><span>See more Resturants</span></button>
+
+
+
+
+                <div class="infoContainer">
+                    <div class="d1">
+                        <p id="news">News</p>
+                        <div class="divv">
+                            <p class="date1">SEP. 10, 2021</p>
+                            <p class="new1">New Resturant Opend</p>
+                            <p class="lor1">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+
+                        </div>
+                        <hr style="width:90.5%;top:15%;background-color:rgb(77, 77, 77);border: none;height: 1px;">
+                        <div class="divv">
+                            <p class="date1">SEP. 10, 2021</p>
+                            <p class="new1">New Resturant Opend</p>
+                            <p class="lor1">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+
+                        </div>
+                        <hr style="width:90.5%;top:15%;background-color:rgb(77, 77, 77);border: none;height: 1px;">
+
+                        <div class="divv">
+                            <p class="date1">SEP. 10, 2021</p>
+                            <p class="new1">New Resturant Opend</p>
+                            <p class="lor1">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+
+                        </div>
+                        <hr style="width:90.5%;top:15%;background-color:rgb(77, 77, 77);border: none;height: 1px;">
+                    </div>
+
+                    <div class="d2" style="height:500px;">
+                        <img class="bot" src="https://s3-media2.fl.yelpcdn.com/bphoto/tPyPRSLfmBCXg36ydC7VOg/o.jpg">
+                        <img class="bot" src="https://s3-media4.fl.yelpcdn.com/bphoto/L5Sr1-F7r65CzWmaFFvxyw/o.jpg"
+                            style="margin-top:10px ;">
+                    </div>
+                </div>
+
+                <div class="footer">
+                    <div class="icons">
+                        <i class="material-icons" id="facebook"
+                            style="font-size:20px;color:rgb(177, 177, 177);margin-left: 20px; ">facebook</i>
+                        <i class="material-icons" id="share"
+                            style="font-size:20px;color:rgb(177, 177, 177);margin-left: 20px;">share</i>
+                        <i class="material-icons" id="whatshot"
+                            style="font-size:20px;color:rgb(177, 177, 177);margin-left: 20px;">whatshot</i>
+                        <i class="material-icons" id="camera"
+                            style="font-size:20px;color:rgb(177, 177, 177);margin-left: 20px;">camera</i>
+                    </div>
+
+                    <p class="p3">Copyright 2021 team 3 <a href="#">Go UP </a>. All Rights Reserved.<br>Made with <i
+                            class="material-icons" style="font-size: 17px;">whatshot</i> by <a
+                            href="http://freehtml5.co/" target="_blank">team 3 .com</a> /
+                        Demo Images: <a href="https://unsplash.com/" target="_blank">Unsplash</a></p>
+                </div>
+            </div>
+
+
+
+            <script>
+                function change() {
+                    document.getElementById("bt1").style.backgroundColor = "transparent";
+                    document.getElementById("bt1").style.border = "solid";
+                    document.getElementById("bt1").style.borderColor = "white";
+                }
+
+                function back() {
+                    document.getElementById("bt1").style.backgroundColor = "rgba(246,110,0,0.9)";
+                    document.getElementById("bt1").style.border = "none"
+                }
+            </script>
+            <script src="index.js"></script>
+</body>
+
+</html>
